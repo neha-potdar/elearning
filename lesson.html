@@ -1,0 +1,274 @@
+<!--<h1><?php echo $title;?></h1>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>INFORMATION</title>
+		<meta charset="utf-8">
+		<meta name = "format-detection" content = "telephone=no" />
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="fonts/css/style.css">
+		<!-- Load Font Awesome Icon Library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="fonts/js/jquery.js"></script>
+		<script src="fonts/js/jquery-migrate-1.2.1.js"></script>
+		<script src="fonts/js/script.js"></script>
+		<script src="fonts/js/superfish.js"></script>
+		<script src="fonts/js/jquery.ui.totop.js"></script>
+		<script src="fonts/js/jquery.equalheights.js"></script>
+		<script src="fonts/js/jquery.mobilemenu.js"></script>
+		<script src="fonts/js/jquery.easing.1.3.js"></script>
+		<script>
+			$(document).ready(function(){
+				$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+		</script>
+
+
+<!-- Bootstrap core CSS -->
+<link href="<?php error_reporting(0); echo web_root; ?>css/bootstrap.min.css" rel="stylesheet">
+<link href="<?php echo web_root; ?>css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+<link href="<?php echo web_root; ?>css/dataTables.bootstrap.css" rel="stylesheet" media="screen"> <link href="<?php echo web_root; ?>css/kcctc.css" rel="stylesheet" media="screen">  
+<link href="<?php echo web_root; ?>fonts/font-awesome.min.css" rel="stylesheet" media="screen">  
+<link rel="stylesheet" type="text/css" href="<?php echo web_root; ?>loginregister.css">  
+<link rel="stylesheet" href="<?php echo web_root; ?>assets/iCheck/flat/blue.css">
+<!-- bootstrap wysihtml5 - text editor -->
+<link rel="stylesheet" href="<?php echo web_root; ?>assets/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+<link rel="stylesheet" href="<?php echo web_root; ?>css/jquery-ui.css">
+
+
+
+
+ 
+ <style type="text/css"> 
+ #content {
+  min-height: 550px;
+  margin: 0;
+  width: 100%;
+}
+#footer > div {
+  background-color: #fff;
+  min-height: 200px;
+  padding: 10px 50px;
+  margin-top: 30px;
+  border-top: 1px solid #ddd;
+
+}
+.footer-links { 
+  /*margin-left: 5px;*/
+}
+#footer > footer { 
+    background-color: rgb(0, 67, 200);
+  min-height: 50px;
+  padding: 10px; 
+  border-top: 1px solid #ddd;
+  color:#fff;
+
+}
+.navbar-nav {
+  float: right;
+}
+@media only screen and (max-width: 768px){
+ .navbar-nav {
+  float: none;
+ }
+
+}
+#content { 
+  margin-right: 0px;
+  margin-left: 90px;
+  width:90%;
+}
+
+#content:before,
+#content:after {
+  display: table;
+  content: "";
+}
+
+#content:after {
+  clear: both;
+}
+
+#content:before,
+#content:after {
+  display: table;
+  content: "";
+}
+
+#content:after {
+clear: both;
+}
+
+#mySidenav a {
+    position: absolute;
+    left: -130px;
+    transition: 0.3s;
+    padding: 20px;
+    width: 190px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#lesson {
+    top: 180px;
+    background-color: rgb(0, 67, 200)
+}
+
+#exercise {
+    top:260px;
+    background-color: rgb(0, 81, 242);
+}
+
+#download {
+    top: 340px;
+    background-color: rgb(33, 107, 255);
+}
+
+#about {
+    top: 420px;
+    background-color: rgb(79, 138, 255);
+}
+#login {
+    top: 500px;
+    background-color: rgb(137, 176, 255);
+}
+
+#title-header {
+  background-color: rgb(0, 67, 200); 
+  border-bottom: 1px solid #ddd; 
+  height: 130px;  
+  padding: 10px 0px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
+.section-title{font-family:Monotype Corsiva; font-size:80px; color:orange;}
+
+  /* Create two equal columns that floats next to each other */
+.column {
+  float: none;
+  width: 20%;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+} 
+ 
+
+ </style>
+ 
+
+<body>
+<section id="title-header">
+  <div class="title">  
+     <img class="logo" src="images/techtree.png" style="width="50px" height="35px">TECH TREE.. <br>LET'S CRACK IT
+      <p class="subtitle"> COMPUTER AND VARIOUS KNOWLEDGE</p> 
+  </div>
+</section>
+
+<section id="navigation">
+  <div id="mySidenav" class="sidenav">
+    <!--<a href="<?php echo web_root; ?>menu.php?q=Lesson" id="lesson">Lesson <i class="fa fa-home pull-right"></i></a> 
+    <a href="<?php echo web_root; ?>menu.php?q=exercises" id="exercise">Exercises <i class="fa fa-pencil pull-right"></i></a>
+    <a href="<?php echo web_root; ?>menu.php?q=download" id="download">Download <i class="fa fa-download pull-right"></i></a>
+    <a href="<?php echo web_root; ?>menu.php?q=about" id="about">About Us <i class="fa fa-info-circle pull-right"></i></a>  -->
+     <a href="s.php" id="lesson">Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/home.png" alt=""   style="width="50px" height="35px"></a> 
+	 <a href="course_ad.html" id="exercise">Lesson&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/pen.jpg" alt=""   style="width="50px" height="35px"></a> 
+	 <a href="Download.php" id="download">Download &nbsp;&nbsp;&nbsp;<img src="images/down.jpg" alt=""   style="width="50px" height="35px"></a> 
+	 <a href="About_us.html" id="about">About Us &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/i.jpg" alt=""   style="width="50px" height="35px"></a> 
+	 <a href="admin_login.html" id="login">Logout &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/logout.jpg" alt=""   style="width="50px" height="35px"></a>  
+  </div>
+</section> 
+
+<div class="col-lg-6">
+<section id="category" class="section-bg">
+      <div class="container">
+        <div class="section-header"> <br> <br> <br> <br>
+<center>     <h1 class="section-title"><b>COURSE INFORMATION</h1>
+          <span class="section-divider"></span>
+        </div>
+		
+<br><br>
+<center>
+
+<h3><b>QUANTITATIVE APTITUDE</h3>
+
+<img src="images/qa4.jpg" alt=""   style="width="100px" height="150px">
+
+<p>Quantitative aptitude quiz categories include formulas, quick tricks, questions, videos and solved examples for problems on ages,<br> 
+		average problems, coding and decoding questions, compound interest, LCM and HCF, geometric, mensuration (areas and volumes), number problems, <br> 
+		number series reasoning, percentages, permutation and combination, pipes and cisterns, probability, profit and loss, quadratic equations, ratio <br> 
+		and proportion, simple interest, speed, time and distance, time and work questions, train problems, verbal analogy, boats and streams, mixtures 
+		and alligations, ordering and partnerships reasoning aptitude questions with their solutions and their explanation. </p>
+
+<h3><b>LOGICAL REASONING</h3>
+
+<img src="images/lr5.jpg" alt=""   style="width="100px" height="150px">
+
+<p>**Logical Reasoning is a part of almost all major Government exams conducted in the country and is one of the most scoring sections as well.<br> Candidates who are preparing for the upcoming competitive exams can find all topics, tips and some sample questions related to Logical reasoning in this article.<br>
+
+Aptitude exams are an inseparable part of all the entrance exams of the public sector in India. The aptitude exams in India has mainly two sections:<br>
+
+    Quantitative Aptitude And 
+    Logical Reasoning<br><br><br>
+	Logical reasoning consists of aptitude questions which require a logical level of analysis to arrive at the correct solution. Most of the questions are constructed based on concepts and the rest are out of the box thinking ones.<br>
+
+**Logical reasoning is classified into two types:<br>
+
+    Verbal Reasoning: It is the ability to logically understand the concepts and solve problems expressed in words. Verbal reasoning tests the ability of extraction of information and implications in a sentence.<br>
+    Non-verbal Reasoning: It is the ability to logically understand the concepts and solve problems expressed in numbers/letters/figures in combination with words. Non-verbal reasoning tests the ability of deduction and induction of logic of information and implications in a problem.
+
+ </p>
+
+<h3><b>GENERAL ENGLISH</h3>
+
+<img src="images/ge5.jpg" alt=""   style="width="100px" height="150px">
+
+<p>GENERAL ENGLISH.<br>
+1. A non-technical term for English when the language at large is contrasted with a usage, variety, dialect, or register: That's Cockney; it isn't general English.<br>
+
+2. A semi-technical term for a course in English, usually as a mother tongue or in an English-medium school,<br> within a framework of general education, usually teaching listening, speaking, reading, and writing.<br>
+
+3. In LINGUISTICS, a range of English that includes the STANDARD but contrasts with specific accents and DIALECTS.<br> The British phonetician John C. Wells contrasts General English (capitalized) and traditional-dialect (lower case): ‘Within General English … there are non-standard varieties in which one says I couldn't see no one and Peter done it rather than the standard I couldn't see anyone and Peter did it’ (Accents of English, volume 1, 1982).<br>
+
+4. Also English for General Purposes. A term in language teaching for a broadly based, usually long-term EFL or ESL course,<br> in contrast to English for Specific Purposes (Business English, English for Medical Purposes, etc.). Compare STANDARD ENGLISH.<br><br>	 </p>
+		
+
+
+<h3><b>COMPUTER AWARENESS</h3>
+
+<img src="images/comp5.jpg" alt=""   style="width="100px" height="150px">
+
+<br>What is Computer Knowledge?<br>
+
+Having a basic knowledge of computer applications is a must for any aspirant to join a suitable job in the Government sector. 
+<br>Apart from that, having awareness of various computer applications, terminologies, shortcuts and software is a must to qualify this section.<br>
+
+Given below are a few points of consideration regarding the Computer Awareness section:<br>
+
+    * The questions are direct<br>
+    * Based on basic computer knowledge<br>
+    * Less time consuming<br>
+    * No lengthy solutions/ calculations<br>
+    * Not a separate section in many bank exams but combined with the Reasoning Ability section<br>
+	<p>Computer awareness begins with recognizing the common concerns and possible fears individuals may experience upon their initial encounters with this 
+rapidly expanding technology. Awareness is also dependent upon an individual's specific knowledge of computer hardware (including micro, mini and mainframe computers, and peripheral devices) and applications (such as information processing and information sharing). Increasing your knowledge and skills in these areas can be accomplished through various training resources. With training and experience, your overall acceptance and appreciation of computerization will continue to rise. 
+Soon your skills will also increase, and you can then begin to experience the benefits of rapid communication and information processing.<br>
+ </p>	
